@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style4.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Animated Background Icons -->
+
+    <div class="weather-bg">
+
+        <span>☁️</span>
+        <span>🌧️</span>
+        <span>☀️</span>
+        <span>❄️</span>
+        <span>⛈️</span>
+
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+
+            <h1>☁️ Weather Dashboard</h1>
+
+            <p>
+                Real-time weather updates around the world
+            </p>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input type="text" id="cityInput" placeholder="Enter city name">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Error -->
+
+        <div id="errorBox" class="error-box"></div>
+
+        <!-- Weather Card -->
+
+        <div class="weather-card">
+
+            <div class="top-section">
+
+                <div>
+
+                    <h2 id="cityName">
+                        Chennai
+                    </h2>
+
+                    <p id="weatherCondition">
+                        Sunny
+                    </p>
+
+                    <p id="dateTime"></p>
+
+                </div>
+
+                <div class="emoji" id="weatherEmoji">
+                    ☀️
+                </div>
+
+            </div>
+
+            <div class="temperature-section">
+
+                <h1 id="temperature">
+                    32°C
+                </h1>
+
+            </div>
+
+            <!-- Details -->
+
+            <div class="details-grid">
+
+                <div class="detail-card">
+
+                    <h3>💧 Humidity</h3>
+
+                    <p id="humidity">60%</p>
+
+                </div>
+
+                <div class="detail-card">
+
+                    <h3>🌬️ Wind Speed</h3>
+
+                    <p id="wind">10 km/h</p>
+
+                </div>
+
+                <div class="detail-card">
+
+                    <h3>🌡️ Feels Like</h3>
+
+                    <p id="feelsLike">35°C</p>
+
+                </div>
+
+                <div class="detail-card">
+
+                    <h3>📍 Country</h3>
+
+                    <p id="country">IN</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">
+
+            <p>
+                Designed with ❤️ using HTML CSS & JavaScript
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script4.js"></script>
+
+</body>
+
+</html>
